@@ -28,7 +28,7 @@
     var pluginName = "placeholder",
         defaults = {
             label2placeholder:false,
-            placeholderClass:"isplaceholder"
+            placeholderClass:"has-placeholder"
         };
 
     // The actual plugin constructor
@@ -126,7 +126,6 @@
         },
         clonePwField: function($inp){
              var $inp2 = $("<input type='text' data-ispass='true' class='"+$inp.attr("class")+"' id='"+$inp.attr("id")+"' value='"+$inp.val()+"' />");
-
             $inp2.focus(function(){
                     $inp.show().focus();
                     $(this).remove();
